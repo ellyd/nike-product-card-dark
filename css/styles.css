@@ -1,0 +1,188 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background-blend-mode: multiply;
+	background-image: url(../img/backg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-color: #c5c5c8; 
+}
+
+.container {
+	width: 790px;
+	margin: 0 auto;
+}
+
+.card {
+	width: 100%;
+	height: 390px;
+	margin: 100px 0 0;
+	background-color: #111a28;
+	position: relative;
+	font-size: 0;
+	box-shadow: 0 0 50px rgba(0, 0, 0, .8 );
+	border-radius: 10px;
+}
+
+.card:before,
+.card:after {
+	content: " ";
+	display: table;
+}
+
+.card:after {
+	clear: both;
+}
+
+.card__gallery,
+.card__info {
+	display: inline-block;
+	height: 100%;
+}
+
+.card__gallery {
+	width: 60%;
+}
+
+.card__gallery-img--logo {
+	position: absolute;
+	left: 20px;
+	top: 20px;
+}
+
+.card__gallery-img {
+	position: absolute;
+	left: 40px;
+	top: 125px;
+}
+
+.card__slides {
+	width: 140px;
+	height: 100px;
+	margin: 350px auto;
+} /* как привязать ко дну */
+
+.card__slide {
+	display: inline-block;
+	transition: all .25s ease;
+	vertical-align: middle;
+} 
+
+.card__slide:hover,
+.card__slide:focus,
+.card__slide.active,
+.card__slide:active {
+	border: 2px solid #7e838b;
+}
+
+.card__slide--gray {
+	width: 17px;
+	height: 17px;
+	background-color: #1f273f;
+	border-radius: 50px;
+	margin: 5px;
+}
+
+.card__slide--white {
+	width: 10px;
+	height: 10px;
+	background-color: #fff;
+	border-radius: 50px;
+	margin: 5px;
+}
+
+.card__slide--red {
+	width: 10px;
+	height: 10px;
+	background-color: #ed3333;
+	border-radius: 50px;
+	margin: 5px;
+}
+
+.card__slide--blue {
+	width: 10px;
+	height: 10px;
+	background-color: #29e3ea;
+	border-radius: 50px;
+	margin: 5px;
+}
+
+
+.card__info {
+	vertical-align: top;
+	color: rgba(255, 255, 255, .4);
+	float: right;
+	width: 40%;
+	padding: 80px 70px 80px 0;
+}
+
+.card__title {
+	font-size: 24px;
+	color: #e1e1e1;
+}
+
+.card__subtitle {
+	font-size: 14px;
+}
+
+.card__select {
+	width: 75px;
+	color: rgba(255, 255, 255, .4);
+	background: none;
+	border: 1px solid rgba(255, 255, 255, .4);
+	font-size: 14px;
+	display: inline-block;
+	padding: 10px 15px;
+	margin: 2px;
+	transition: all .25s linear;
+	outline: none;
+	-webkit-appearance: none;
+	background-image: url(../img/Rectangle.png);
+	background-repeat: no-repeat;
+	background-position: calc(100% - 10px) center;
+}
+
+.card__select:hover,
+.card__select:focus,
+.card__select:active {   
+	border-color: #efce4a;
+	color: #efce4a;
+}
+
+.card__option {
+	background-color: #111a28; 
+}
+
+.card__btn {
+	color: rgba(255, 255, 255, .4);
+	background-color: #202835;
+	border: 1px solid rgba(255, 255, 255, .4); 
+	padding: 15px 50px;
+	margin: 20px 0;
+	transition: all .25s linear;
+	outline: none;
+}
+
+.card__btn:hover,
+.card__btn:focus,
+.card__btn:active {
+	border-color: #efce4a;
+	color: #efce4a;
+}
+
+.card__stars {
+	display: block;
+	margin-bottom: 20px;
+	padding: 0;
+}
+
+.card__star {
+	display: inline-block;
+}

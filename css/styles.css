@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&subset=cyrillic');
+
 * {
 	box-sizing: border-box;
 }
@@ -65,14 +67,17 @@ body {
 
 .card__slides {
 	width: 140px;
-	height: 100px;
+	height: 35px;
 	margin: 350px auto;
-} /* как привязать ко дну */
+	outline: none;
+} 
+
+/* как привязать ко дну */
 
 .card__slide {
 	display: inline-block;
-	transition: all .25s ease;
 	vertical-align: middle;
+	transition: all .25s ease;
 } 
 
 .card__slide:hover,
@@ -116,6 +121,7 @@ body {
 
 
 .card__info {
+	font-family: "Roboto", Arial, sans-serif;
 	vertical-align: top;
 	color: rgba(255, 255, 255, .4);
 	float: right;
@@ -124,12 +130,16 @@ body {
 }
 
 .card__title {
-	font-size: 24px;
+	letter-spacing: .7px;
+	font-size: 25px;
+	font-weight: 300;
 	color: #e1e1e1;
 }
 
 .card__subtitle {
 	font-size: 14px;
+	letter-spacing: .7px;
+	font-weight: 300;
 }
 
 .card__select {
@@ -138,6 +148,7 @@ body {
 	background: none;
 	border: 1px solid rgba(255, 255, 255, .4);
 	font-size: 14px;
+	font-weight: 300;
 	display: inline-block;
 	padding: 10px 15px;
 	margin: 2px;
@@ -166,6 +177,8 @@ body {
 	border: 1px solid rgba(255, 255, 255, .4); 
 	padding: 15px 50px;
 	margin: 20px 0;
+	font-size: 14px;
+	font-weight: 300;
 	transition: all .25s linear;
 	outline: none;
 }
